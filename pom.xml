@@ -55,6 +55,14 @@
       </snapshots>
     </repository>
     <repository>
+      <id>cdh.rcs.releases.repo</id>
+      <url>https://repository.cloudera.com/content/groups/cdh-releases-rcs</url>
+      <name>CDH Releases Repository</name>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+    <repository>
       <id>apache-repo</id>
       <name>Apache Repository</name>
       <url>https://repository.apache.org/content/repositories/releases</url>
