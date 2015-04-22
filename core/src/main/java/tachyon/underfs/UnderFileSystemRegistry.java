@@ -128,6 +128,9 @@ public final class UnderFileSystemRegistry {
         + "given path: ").append(path).append('\n');
     for (Throwable e: errors) {
       errorStr.append(e.getMessage()).append('\n');
+      for (StackTraceElement stframe : e.getStackTrace()) {
+        errorStr.append(stframe.toString() + "\n");
+      }
     }
     throw new IllegalArgumentException(errorStr.toString());
   }
